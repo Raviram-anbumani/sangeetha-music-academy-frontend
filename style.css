@@ -8,18 +8,17 @@
     border-bottom:outset 5px rgb(17, 170, 225);
     box-shadow: 2px 2px 3px rgb(2, 41, 104);
 }
-nav #collapsible{
-    text-decoration: none;
-    color:white;
-    text-shadow:1px 1px 1px black;
-    padding-left: 15px;
+nav #collapsible a{
+    color:rgb(255, 255, 255);
     text-shadow: 1px 3px 10px black ;
 }
+
 #head{
+    width:100%;
     position:absolute;
-    display:flex;
-    padding:20px;
-    z-index:10
+    top:0;
+    left:0;
+    z-index:10;
 }
 
 nav #collapsible a:hover{
@@ -33,7 +32,7 @@ nav #collapsible a:hover{
     bottom:0;
     padding:30px 15px 40px;
     color:white;
-    text-shadow: 1px 3px 3px black 
+    text-shadow: 1px 3px 3px black ;
 }
 #body{
     background-color:rgb(4, 50, 67);
@@ -81,3 +80,9 @@ footer{
         padding:10px 15px;
     }
 }
+@media(min-width:780px){
+    .navbar-brand{
+       padding-left :50px;
+    }
+}
+    
