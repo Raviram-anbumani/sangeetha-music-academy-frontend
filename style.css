@@ -1,35 +1,37 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+
 .carousel-item{
-    height:600px;
+    height:700px;
     position : relative;
     border-bottom:outset 5px rgb(17, 170, 225);
     box-shadow: 2px 2px 3px rgb(2, 41, 104);
 }
-.carousel-header nav a{
+nav #collapsible{
     text-decoration: none;
     color:white;
     text-shadow:1px 1px 1px black;
     padding-left: 15px;
-    text-shadow: 1px 3px 10px black 
-    
+    text-shadow: 1px 3px 10px black ;
 }
-.carousel-header{
+#head{
     position:absolute;
-    top:30px;
-    right:150px;
+    display:flex;
     padding:20px;
-    z-index:10;
-
+    z-index:10
 }
-.carousel-header nav a:hover{
+
+nav #collapsible a:hover{
     color:rgb(23, 170, 224);
     font-weight:bold;
 }
 .carousel-inner .container{
     position:absolute;
-    padding:50px;
     left:0;
     right:0;
     bottom:0;
+    padding:30px 15px 40px;
     color:white;
     text-shadow: 1px 3px 3px black 
 }
@@ -59,10 +61,6 @@ footer{
     text-align :center;
 }
 .logo{
-    position:absolute;
-    z-index:10;
-    top:10px;
-    left:150px;
     text-shadow: 1px 1px 10px black;
     font-family:'Cinzel';
     color:rgb(23, 170, 224);
@@ -71,4 +69,15 @@ footer{
     font-family:'lavishly yours';
     font-size:100px;
     z-index: 100;
+}
+@media(max-width:600px){
+    .carousel-item{
+        height:500px;
+    }
+    .logo .sangeetha{
+        font-size:60px;
+    }
+    #head{
+        padding:10px 15px;
+    }
 }
